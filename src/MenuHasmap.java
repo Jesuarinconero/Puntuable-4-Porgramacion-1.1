@@ -1,13 +1,12 @@
-import java.util.Map;
 import java.util.Scanner;
 
-public class Menu {
-    public static void main(String[] args) {
+public class MenuHasmap {
+    public void menuHasmap() {
         Opciones opciones = new Opciones();
-        boolean salir = false;
+        boolean salirhasmap = false;
         Scanner sc = new Scanner(System.in);
         System.out.println("\t\tPrograma Atlas");
-        while (!salir){
+        while (!salirhasmap) {
             System.out.println("1 Añadir un atlas\t 2-Mostrar el contenido del atlas");
             System.out.println("3 Buscar una entrada en el atlas\t 4- Modificar el atlas actual");
             System.out.println("5 Ordenar por paises\t 6- Mostar el contenido del atlas con un iteratos");
@@ -16,15 +15,15 @@ public class Menu {
             System.out.print("Opciones: ");
 
 
-            int opcion =0;
+            int opcion = 0;
 
             try {
-                 opcion = Integer.parseInt(sc.nextLine());
+                opcion = Integer.parseInt(sc.nextLine());
 
             } catch (NumberFormatException e) {
                 System.out.println("Error: Debe ingresar un número entero.");
             }
-            switch (opcion){
+            switch (opcion) {
                 case 1:
                     opciones.IntroducirPais();
                     break;
@@ -51,7 +50,7 @@ public class Menu {
                     break;
                 case 9:
                     System.out.println("Hasta luego");
-                    salir = true;
+                    salirhasmap = true;
                     break;
                 default:
                     System.out.println("Introduce un numero del 1-9");
