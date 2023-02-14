@@ -71,4 +71,17 @@ public class Opciones {
         }
     }
 
+    public void  ElimininarUnaEntrada(){
+        System.out.println("Introduce el pais que desea borrar");
+        String Pais = sc.nextLine();
+        if (atlas.containsKey(Pais)){
+            atlas.remove(Pais);
+        }else {
+            System.out.println("El Pais no se encuentra en el atlas");
+        }
+    }
+    public void EliminarAtlas(){
+        atlas.clear();
+    }
+
 }

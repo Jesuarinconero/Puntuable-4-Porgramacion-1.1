@@ -44,10 +44,10 @@ public class Menu {
                     opciones.MostrarContenidoConIteratos();
                     break;
                 case 7:
-                    System.out.println(7);
+                    opciones.ElimininarUnaEntrada();
                     break;
                 case 8:
-                    System.out.println(8);
+                    opciones.EliminarAtlas();
                     break;
                 case 9:
                     System.out.println("Hasta luego");
