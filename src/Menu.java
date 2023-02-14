@@ -1,3 +1,4 @@
+import java.util.Map;
 import java.util.Scanner;
 
 public class Menu {
@@ -34,13 +35,13 @@ public class Menu {
                     opciones.BuscarEntrada();
                     break;
                 case 4:
-                    System.out.println(4);
+                    opciones.Modificarentrada();
                     break;
                 case 5:
-                    System.out.println(5);
+                    opciones.ordenarPaises();
                     break;
                 case 6:
-                    System.out.println(6);
+                    opciones.MostrarContenidoConIteratos();
                     break;
                 case 7:
                     System.out.println(7);
