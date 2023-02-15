@@ -1,4 +1,7 @@
+package Hasmap;
+
 import java.util.*;
+import Hasmap.MenuHasmap;
 
 public class Opciones {
     private HashMap<String, String> atlas;

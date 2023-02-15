@@ -1,5 +1,9 @@
-import java.util.Scanner;
+import Hasmap.MenuHasmap;
 
+import Hasmap.MenuHasmap;
+
+import java.util.Scanner;
+/*
 public class MenuPrincipal {
     public static void main(String[] args) {
         boolean salir = false;
@@ -34,4 +38,4 @@ public class MenuPrincipal {
         }
     }
 }
-
+*/

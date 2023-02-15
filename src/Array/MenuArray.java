@@ -1,8 +1,15 @@
+package Array;
+
+import Hasmap.MenuHasmap;
+
 import java.util.Scanner;
 
-public class MenuHasmap {
-    public void menuHasmap() {
-        Opciones opciones = new Opciones();
+public class MenuArray {
+    MenuArray(){
+
+    }
+    public static void main(String[] args) {
+         OpcionesArray opcionesArray = new OpcionesArray();
         boolean salirhasmap = false;
         Scanner sc = new Scanner(System.in);
         System.out.println("\t\tPrograma Atlas");
@@ -25,28 +32,28 @@ public class MenuHasmap {
             }
             switch (opcion) {
                 case 1:
-                    opciones.IntroducirPais();
+                    opcionesArray.AñadirEnElAtlas("","");
                     break;
                 case 2:
-                    opciones.MostrarContenidoAtlas();
+
                     break;
                 case 3:
-                    opciones.BuscarEntrada();
+
                     break;
                 case 4:
-                    opciones.Modificarentrada();
+
                     break;
                 case 5:
-                    opciones.ordenarPaises();
+
                     break;
                 case 6:
-                    opciones.MostrarContenidoConIteratos();
+
                     break;
                 case 7:
-                    opciones.ElimininarUnaEntrada();
+
                     break;
                 case 8:
-                    opciones.EliminarAtlas();
+
                     break;
                 case 9:
                     System.out.println("Hasta luego");
@@ -54,7 +61,6 @@ public class MenuHasmap {
                     break;
                 default:
                     System.out.println("Introduce un numero del 1-9");
-
 
             }
         }
