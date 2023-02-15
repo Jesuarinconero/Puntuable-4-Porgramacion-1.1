@@ -7,11 +7,11 @@ public class MenuHasmap {
         Scanner sc = new Scanner(System.in);
         System.out.println("\t\tPrograma Atlas");
         while (!salirhasmap) {
-            System.out.println("1 Añadir un atlas\t 2-Mostrar el contenido del atlas");
-            System.out.println("3 Buscar una entrada en el atlas\t 4- Modificar el atlas actual");
-            System.out.println("5 Ordenar por paises\t 6- Mostar el contenido del atlas con un iteratos");
-            System.out.println("7 Eliminar la entrada del atlas\t 8- Eliminar por completo el atlas");
-            System.out.println("9 Salir");
+            System.out.println("1- Añadir un atlas                   2-Mostrar el contenido del atlas");
+            System.out.println("3- Buscar una entrada en el atlas    4- Modificar el atlas actual");
+            System.out.println("5- Ordenar por paises                6- Mostar el contenido del atlas con un iteratos");
+            System.out.println("7- Eliminar la entrada del atlas     8- Eliminar por completo el atlas");
+            System.out.println("9- Salir");
             System.out.print("Opciones: ");
 
 

@@ -6,6 +6,7 @@ public class Opciones {
 
     public Opciones() {
         atlas = new HashMap<>();
+        atlas.put("Portugal","Lisboa");
 
     }
 
