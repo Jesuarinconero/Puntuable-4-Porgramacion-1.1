@@ -13,12 +13,12 @@ public class OpcionesArray {
     }
 
     public String getIntroducirPais() {
-        System.out.println("\u001B[36mIntroducir Pais");
+        System.out.print("\u001B[36mIntroducir Pais");
         return pais = sc.nextLine();
     }
 
     public String getIntroducirCapital() {
-        System.out.println("\u001B[36mIntroducir Capital:");
+        System.out.print("\u001B[36mIntroducir Capital:");
         return capital = sc.nextLine();
     }
 
