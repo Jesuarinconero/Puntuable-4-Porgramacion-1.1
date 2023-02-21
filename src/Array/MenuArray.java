@@ -8,6 +8,7 @@ public class MenuArray {
     public MenuArray(){
 
     }
+    /*Realizamos un menu para meter los metodos anterioriores*/
    public void MenuArray(){
          OpcionesArray opcionesArray = new OpcionesArray();
         boolean salirhasmap = false;

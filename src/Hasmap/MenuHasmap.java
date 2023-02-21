@@ -2,6 +2,7 @@ package Hasmap;
 import java.util.Scanner;
 
 public class MenuHasmap {
+    /*Realizamos un menu para meter los metodos anterioriores*/
     public void menuHasmap() {
         Opciones opciones = new Opciones();
         boolean salirhasmap = false;

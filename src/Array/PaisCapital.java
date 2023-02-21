@@ -1,12 +1,15 @@
 package Array;
 
 public class PaisCapital {
+    /*Variable*/
     String pais;
     String capital;
+    /*Contructor*/
     public PaisCapital(String pais, String capital) {
         this.pais=pais;
         this.capital =capital;
     }
+    /*Metodos para obtener paises capital y cambiar la capital*/
 
     public String getPais() {
         return pais;

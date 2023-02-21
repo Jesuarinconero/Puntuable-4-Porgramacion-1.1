@@ -6,6 +6,7 @@ public class MenuPrincipal {
     public static void main(String[] args) {
         boolean salir = false;
         Scanner sc = new Scanner(System.in);
+        /*Realizamos un  super menu que recoge las dos versiones tanto con Array y Hashmap */
         MenuHasmap MenuHasmap = new MenuHasmap();
         MenuArray MenuArray = new MenuArray();
         while (!salir) {

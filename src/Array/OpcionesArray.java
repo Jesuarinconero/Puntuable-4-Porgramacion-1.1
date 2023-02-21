@@ -8,28 +8,28 @@ public class OpcionesArray {
     String pais;
     private ArrayList<PaisCapital> atlas = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
-
+/*Constructor*/
     OpcionesArray() {
     }
-
+/*Metodos introducirPais*/
     public String getIntroducirPais() {
         System.out.print("\u001B[36mIntroducir Pais");
         return pais = sc.nextLine();
     }
-
+    /*Metodos introducir Capital */
     public String getIntroducirCapital() {
         System.out.print("\u001B[36mIntroducir Capital:");
         return capital = sc.nextLine();
     }
 
-
+/*Añadir en el atlas */
     public void AñadirEnElAtlas(String pais, String capital) {
         pais = getIntroducirPais();
         capital = getIntroducirCapital();
 
         atlas.add(new PaisCapital(pais, capital));
     }
-
+/*Muestra en el atlas */
     public void MostrarAtlas() {
         for (PaisCapital paisCapital : atlas) {
             System.out.println("\u001B[33mPaís: " + paisCapital.getPais() + ",\u001B[32m Capital: " + paisCapital.getCapital());
@@ -37,7 +37,7 @@ public class OpcionesArray {
         System.out.println("\u001B[35mHay "+atlas.size() + " \u001B[35melementos en el atlas");
 
     }
-
+/*Busca una entrada en el atlas */
     public void BuscarEntradaAtlas() {
         try {
             System.out.print("\u001B[36mIntroduzca el país: ");
@@ -58,7 +58,7 @@ public class OpcionesArray {
         }
     }
 
-
+/*Modifica la entrada en el atlas*/
     public void ModificarAtlas() {
         try {
             System.out.print("\u001B[31mIntroduzca el país: ");
@@ -84,14 +84,14 @@ public class OpcionesArray {
             System.out.println(ex.getMessage());
         }
     }
-
+/*Ordena el atlas*/
     public void OrdenarAtlas(){
         Collections.sort(atlas, Comparator.comparing(PaisCapital::getPais));
         for (PaisCapital paisCapital : atlas) {
             System.out.println("\u001B[35mPaís: " + paisCapital.getPais() + ", Capital: " + paisCapital.getCapital());
         }
     }
-
+/*Muestra el atlas con Iterator */
     public void MostrarContenidoConIterator(){
         Iterator<PaisCapital> iterator = atlas.iterator();
         while (iterator.hasNext()) {
@@ -100,6 +100,7 @@ public class OpcionesArray {
         }
         System.out.println("\u001B[36mHay "+atlas.size() + "\u001B[36m elementos en el atlas");
     }
+    /*Borra una entrada en el atlas */
     public void BorrarEntradaAtlas() {
         try {
             System.out.print("\u001B[31mIntroduzca el país que desea borrar: ");
@@ -123,6 +124,7 @@ public class OpcionesArray {
             System.out.println(ex.getMessage());
         }
     }
+    /*Borra el atlas el atlas entero*/
     public void BorrarAtlasEntero(){
         atlas.clear();
         System.out.println("\u001B[33mEliminado el Atlas por completo ");
